@@ -1,0 +1,15 @@
+COMO GERAR O APK DO NOVA (sem Android Studio)
+
+1. Crie uma conta em github.com e um repositorio novo (publico ou privado), por exemplo "nova".
+2. Envie TODOS os arquivos desta pasta para o repositorio, mantendo as pastas:
+   www/index.html, package.json, capacitor.config.json, .gitignore
+   e o arquivo .github/workflows/build.yml
+   (Se o envio de pastas nao funcionar, use "Add file > Create new file", digite
+   .github/workflows/build.yml no nome e cole o conteudo do arquivo.)
+3. Abra a aba "Actions" do repositorio. O build "Build APK" comeca sozinho
+   (ou clique em Run workflow). Leva uns 5 a 10 minutos.
+4. Quando ficar verde, abra a aba "Releases" do repositorio: la estara o arquivo
+   Nova-Android.apk. Baixe e instale no celular (permita instalar de fontes desconhecidas).
+
+O APK gerado e de teste (debug) e serve para instalar direto. Para publicar na
+Play Store seria preciso assinar uma versao release.
